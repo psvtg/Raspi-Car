@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" fixedFrame="YES" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7h-D1-oQ6">
+                                <rect key="frame" x="0.0" y="2" width="443" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHc-FO-kS8">
+                                <rect key="frame" x="451" y="236" width="110" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACKWARD" image="stop.png"/>
+                                <connections>
+                                    <action selector="BACKWARDAction:" destination="BYZ-38-t0r" eventType="touchDown" id="REf-F9-8XU"/>
+                                    <action selector="BACKWARDAction:" destination="BYZ-38-t0r" eventType="touchDragInside" id="kaf-9b-rsK"/>
+                                    <action selector="BACKWARDAction:" destination="BYZ-38-t0r" eventType="touchDragEnter" id="vp2-Cn-ge9"/>
+                                    <action selector="BACKWARDActionStop:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="CXQ-Ps-PZZ"/>
+                                    <action selector="BACKWARDActionStop:" destination="BYZ-38-t0r" eventType="touchDragExit" id="Hi1-k1-Bzl"/>
+                                    <action selector="BACKWARDActionStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lcb-vP-xDx"/>
+                                    <action selector="BACKWARDActionStop:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="yoD-B0-tK0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZZ-RJ-dMN">
+                                <rect key="frame" x="47" y="279" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1c-RY-DoT">
+                                <rect key="frame" x="170" y="279" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NP-mx-2uE">
+                                <rect key="frame" x="313" y="279" width="137" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbU-b4-mma">
+                                <rect key="frame" x="471" y="0.0" width="90" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="FORWARD" image="gas.png"/>
+                                <connections>
+                                    <action selector="FORWARDAction:" destination="BYZ-38-t0r" eventType="touchDragEnter" id="1LD-qg-RD3"/>
+                                    <action selector="FORWARDAction:" destination="BYZ-38-t0r" eventType="touchDragInside" id="h6G-fi-DCX"/>
+                                    <action selector="FORWARDAction:" destination="BYZ-38-t0r" eventType="touchDown" id="yfu-nW-j3c"/>
+                                    <action selector="FORWARDActionStop:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="C67-K5-lTt"/>
+                                    <action selector="FORWARDActionStop:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="Tuf-Wg-Vut"/>
+                                    <action selector="FORWARDActionStop:" destination="BYZ-38-t0r" eventType="touchDragExit" id="sOI-kx-AkS"/>
+                                    <action selector="FORWARDActionStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uAD-Mx-wgA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2ZZ-RJ-dMN"/>
+                                <exclude reference="D1c-RY-DoT"/>
+                                <exclude reference="7NP-mx-2uE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="WEB1" destination="C7h-D1-oQ6" id="wek-nU-I1f"/>
+                        <outlet property="X" destination="2ZZ-RJ-dMN" id="CXz-Np-Pr6"/>
+                        <outlet property="Y" destination="D1c-RY-DoT" id="P3F-83-drf"/>
+                        <outlet property="Z" destination="7NP-mx-2uE" id="iE1-H2-yba"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.25352112676056" y="123.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gas.png" width="151" height="530"/>
+        <image name="stop.png" width="290" height="214"/>
+    </resources>
+</document>
