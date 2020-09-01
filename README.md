@@ -1,2 +1,2 @@
 # Raspi-Car
-Remote cotrolled (from anywhere by dedicated IP and iOS/ANDROID app) car 
+Remote cotrolled car via Raspberry Pi, Arduino Nano and Node.JS
