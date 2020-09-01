@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Raspi-Car</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- css files -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- /css files -->
+
+<!-- js files -->
+<script src="js/modernizr.custom.js"></script>
+<!-- /js files -->
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<div class="navbar-wrapper">
+    <div class="container">
+		<nav class="navbar navbar-inverse navbar-static-top cl-effect-20">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Raspi-Car</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li><a href="#"><span data-hover="Наверх">Наверх</span></a></li>
+						<li><a href="#what"><span data-hover="Что?">Что?</span></a></li>
+						<li><a href="#how"><span data-hover="Как?">Как?</span></a></li>
+					</ul>
+				</div>
+			</div>
+        </nav>
+    </div>
+</div>
+
+<!-- Камера -->
+<div id="myCarousel" data-ride="carousel" style="background: rgba(0, 0, 0, 0.65); background-image: url(http://127.0.0.1:8081/); background-repeat:no-repeat; width: 100%; background-position: top center;  background-size: 100%; position: relative">
+    <div id='gobutton' style="position: absolute;left:25%; bottom: 10%;">
+        <a href="drive.html"><button class="btn-outline1">Поехали</button></a>
+    </div>
+</div>
+<!-- /.Камера -->
+
+<!-- Что это -->
+<section class="about-us" id="what">
+	<h3 class="text-center slideanim">Что это?</h3>
+	<p class="text-center slideanim">Гоночная машинка с веб-камерой, управляемая с твоего телефона!</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6">
+				<img src="img/car.jpg" alt="" class="img-responsive slideanim">
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6">
+				<div class="about-info">
+					<h4 class="slideanim">Как это?</h4>
+					<p class="abt slideanim">На корпусе машинки установлен компьютер, позволяющий управлять моторами и колесами через Интернет. Онлайн веб-камера позволяет делать это в реальном времени из любой точки мира, с любого мобильного устройства, без установки дополнительных приложений.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Что это -->
+
+<!-- Как управлять -->
+<section class="our-events slideanim" id="how">
+	<h3 class="text-center slideanim">Как управлять?</h3>
+	<p class="text-center slideanim">Короткий инструктаж для новичка</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4">
+				<div class="event-info">
+                    <h4 class="text-center slideanim"><img src="img/arrows.png" width="30%" style="opacity: 0.45;"><br><br><br>Повороты<br><br></h4>
+					<p class="eve slideanim">Радиус поворота колёс зависит от угла поворота телефона. Чем сильнее повернут телефон - тем круче повернёт машинка.<br><br>
+                    Не забудьте, что при сильном повороте телефона, экран может сменить ориентацию.<br><br>
+                    Управление машинкой доступно только при горизонтальной ориентации.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4">
+				<div class="event-info">
+					<h4 class="text-center slideanim"><img src="img/pedal.png" width="30%" style="opacity: 0.45;"><br><br><br>Газ / тормоз<br><br></h4>
+					<p class="eve slideanim">Просто жми на педали! Педаль тормоза таккже служит задней передачей. Газ в пол!!!</p>
+				</div>
+			</div>	
+			<div class="col-lg-4 col-md-4">
+				<div class="event-info">
+					<h4 class="text-center slideanim"><img src="img/camera.png" width="30%" style="opacity: 0.45;"><br><br><br>Камера<br><br></h4>
+					<p class="eve slideanim">Следи за дорогой!</p>
+				</div>
+			</div>	
+            
+		</div>
+        <div style="height: 20px;"></div>
+        <div class="row">
+			<div class="col-lg-4 col-md-4">
+				<div class="event-info">
+                    <h4 class="text-center slideanim"><img src="img/headlight.png" width="30%" style="opacity: 0.45;"><br><br><br>Свет<br><br></h4>
+					<p class="eve slideanim">Диодные фары помогут в темноте!</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4">
+				<div class="event-info">
+					<h4 class="text-center slideanim"><img src="img/parktronic.png" width="30%" style="opacity: 0.45;"><br><br><br>Парктроники<br><br></h4>
+					<p class="eve slideanim">Безопасное вождение - твой приоритет!</p>
+				</div>
+			</div>	
+			<div class="col-lg-4 col-md-4">
+				<div class="event-info">
+					<h4 class="text-center slideanim"><img src="img/speedometer.png" width="30%" style="opacity: 0.45;"><br><br><br>Скорость<br><br></h4>
+					<p class="eve slideanim">Установленный двигатель позволяет развить скорость до 40 км/ч!</p>
+				</div>
+			</div>	
+            
+		</div>
+	</div>
+</section>
+<!-- /Как управлять -->
+
+<!-- Footer -->
+<section class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 footer-left">
+				<h4>Контакты</h4>
+				<div class="contact-info">
+					<div class="phone">
+						<i class="fa fa-telegram"></i>
+						<p class="p3">@psvtg</p>
+					</div>
+					<div class="email-info">
+						<i class="fa fa-envelope"></i>
+						<p class="p3"><a href="mailto:email1@example.com">psvt@protonmail.com</a></p> 
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="col-md-4 footer-center">
+				<h4>Поддержать проект</h4>
+				<p><iframe src="https://money.yandex.ru/quickpay/button-widget?targets=%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82&default-sum=300&button-text=14&any-card-payment-type=on&button-size=m&button-color=orange&successURL=&quickpay=small&account=410018025278003&" width="284" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe></p>
+			</div><!-- col -->
+		</div><!-- row -->
+	</div><!-- container -->
+	<hr>
+	<div class="copyright">
+		<p>© 2020 psvtg. All Rights Reserved | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
+	</div>
+</section>
+<!-- /Footer Section -->
+<!-- Back To Top -->
+<a href="#0" class="cd-top">Top</a>
+<!-- /Back To Top -->
+
+<!-- js files -->
+<script src="js/jquery.min.js"></script>
+<script src="js/SmoothScroll.min.js"></script>
+<!-- js for gallery -->
+<script src="js/darkbox.js"></script>
+<!-- /js for gallery -->
+<!-- js for back to top -->
+<script src="js/main.js"></script>
+<!-- /js for back to top -->
+<!-- js for nav-smooth scroll -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 900, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+    });
+  });
+})
+</script>
+<!-- /js for nav-smooth scroll -->
+<!-- js for slide animations -->
+<script>
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+</script>
+<!-- /js for slide animations -->
+<!-- /js files -->
+</body>
+</html>
+<script type="text/javascript">
+screenHeight = screen.height;
+screenWidth = screen.width;
+buttonWidth = screen.width/2 + 'px';
+//document.getElementById('gobutton').setAttribute("style","position:absolute;left:25%;bottom:20%;"); 
+document.getElementById('gobutton').style.width = buttonWidth;
+    
+var isAndroid = /(android)/i.test(navigator.userAgent);
+if(isAndroid) {
+    if(screen.width < screen.height){
+        //portrait mode on Android
+        document.getElementById('myCarousel').style.height = 360*screenWidth/640+'px';
+
+    }
+    else{
+        //landscape mode on Android
+        document.getElementById('myCarousel').style.height = window.innerHeight+'px';
+
+    }
+}
+else {
+    if(window.orientation == 0){
+        //portrait mode iOS and other devices
+        document.getElementById('myCarousel').style.height = 360*screenWidth/640+'px';
+    }
+        else{
+        //landscape mode  iOS and other devices
+        document.getElementById('myCarousel').style.height = window.innerHeight+'px';
+
+    }
+}
+
+var supportsOrientationChange = "onorientationchange" in window,
+    orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+
+window.addEventListener(orientationEvent, function() {
+
+if(isAndroid) {
+    if(screen.width < screen.height){
+        //portrait mode on Android
+        document.getElementById('myCarousel').style.height = 360*screenWidth/640+'px';
+
+    }
+    else{
+        //landscape mode on Android
+        document.getElementById('myCarousel').style.height = window.innerHeight+'px';
+
+    }
+} 
+else {
+    if(window.orientation == 0){
+        //portrait mode iOS and other devices
+        document.getElementById('myCarousel').style.height = 360*screenWidth/640+'px';
+    }
+        else{
+        //landscape mode  iOS and other devices
+        document.getElementById('myCarousel').style.height = window.innerHeight+'px';
+	}
+}
+})
+</script>

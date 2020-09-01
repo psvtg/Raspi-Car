@@ -1,0 +1,56 @@
+<html style="overflow:hidden;" xmlns="http://www.w3.org/1999/xhtml">
+<script type="text/javascript" charset="utf-8" id="zm-extension" src="chrome-extension://fdcgdnkidjaadafnichfpabhfomcebme/scripts/webrtc-patch.js" async=""></script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>Машина Онлайн</title>
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href ="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="body"  bgcolor="#000" style="overflow:auto; margin:0;">
+	<div id="yes" style="width :100%; height: 100%;">
+		<div class="landscape" id="landscape" style="background: rgba(0, 0, 0, 0.65); background-image: url(http://127.0.0.1:8081/); background-repeat:no-repeat; width: 100%; height:100%; background-position: center center; background-size: 100%;position:absolute; left:0; top:0;">
+			<div id="myModal" class="modal">
+				<div class="modal-content" ontouchmove="touchMove(event)" ontouchend="touchEnd()">
+                    <div id="top" style="width: 100%; height: 50000px; background-color:rgba(200, 60, 4, 0);">
+                    </div>
+                    <div id="drive" style="width: 100%; height: 50000px; background-color:rgba(50, 100, 150, 0);">
+                    </div>
+                    <div id="bottom" style="width: 100%; height: 50000px; background-color:rgba(100, 80, 40, 0);">
+                    </div>
+                </div>
+            </div>
+			<div id="canvas" style= "position:absolute; left:0; top:0; color: #ffffff; width: 80%; height: 100%; float: left; overflow-y: hidden;">
+			</div>
+			<div id="stop" style="position: absolute; top:75%; height: 25%; width: 25%;  background-image: url(img/stop.png); background-repeat:no-repeat; background-position: bottom left; background-size: contain;">
+			</div>
+			<div id="go" style="position: absolute; height: 75%; width: 19%; left: 81%; top: 25%; background-image: url(img/go.png); background-repeat:no-repeat; background-position: bottom right; background-size: contain;">
+			</div>
+			<div style="width:1px; height:1px; position:absolute; top:0px; right:1px;">
+			</div>
+		</div>
+		<div class="portrait" id="portrait" style="color:#fff; position: absolute; top:0px; left:0px; width:100%; height:100%; background-image: url(img/arrows.png); background-repeat:no-repeat; background-position: center center;">
+			<div id="turn-rus"  style="display: flex; align-items: center; position: absolute; height: 10%; width: 100%; left: 0%; top: 0%; text-align:center; vertical-align:middle; color:#ffffff; justify-content: center;">Поверни телефон
+			</div>
+			<div id="turn-eng"  style="display: flex; align-items: center; position: absolute; height: 10%; width: 100%; left: 0%; top: 90%; text-align:center;vertical-align:middle; color:#ffffff; justify-content: center;">Turn your phone
+            </div>
+		</div>
+	</div>
+	<div id="no">Your browser does not support Device Orientation and Motion API. Try this sample with iPhone, iPod or iPad with iOS 4.2+.
+	</div>
+</body>
+</html>
+<script src="http://192.168.1.78:8000/socket.io/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://code.angularjs.org/1.2.12/angular.min.js"></script>
+<script src="http://code.angularjs.org/1.2.12/angular-route.min.js"></script>
+<script type="text/javascript" src="http://ip-jobs.staff-base.spb.ru/ip.cgi"></script>
+<script src="js/clientconnect.js"></script>
+<script src="js/landscape.js"></script>
+<script src="js/wheels.js"></script>
+<script src="js/pedals.js"></script>
+<script src="js/cammove.js"></script>
